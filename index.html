@@ -1,12 +1,13 @@
 <html>
 
 <head>
+    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="/prism.js"></script>
 </head>
 
 <body>
@@ -20,17 +21,19 @@
     </div>
 
     <div id="main">
-        <h1>GitHub Basics</h1>
+        <h1>Git & GitHub Basics</h1>
         <h2>Frankie Scott</h2>
         <p>This tutorial will outline the basics of Git and GitHub. Please keep in mind the functionality of Git extends beyond the scope of this tutorial. This should only be used as a stepping stone. If you have any questions, do not hesitate to contact me.</p>
 
         <a name="create"></a>
-        <h3>Creating An Account</h3>
-        <p>Tutorial content</p>
+        <h3>Creating A GitHub Account</h3>
+        <p>Head over to the <a href="https://github.com/join?source=header-home">sign up page</a> to create a GitHub account. Create a username, password, and enter your e-mail. Choose the option for unlimited free public repositories as your plan. A paid subscription is not required. You will then be asked to provide some information about your programming experience and what you plan to use GitHub for. You can skip this step or fill out the form. Congratulations! You now have a GitHub account.</p>
 
         <a name="install"></a>
         <h3>Installing Git</h3>
-        <p>Tutorial content</p>
+        <p>GitHub is a only a web-based hosting service for Git repositories. It allows you to store remote copies of your repositories as backups and enables you to share and view repositories. Git is the version control system that GitHub was built on top of. GitHub offers the same functionality but Git can be integrated into a text editor or IDE as a plugin and offer more effeciency in work flow.</p>
+
+        <p>Download Git <a href="https://git-scm.com/downloads">here.</a></p>
 
         <a name="configure"></a>
         <h3>Configuring Git</h3>
@@ -43,6 +46,20 @@
         <a name="basic"></a>
         <h3>Basic Commands</h3>
         <p>Tutorial content</p>
+
+        <a name="ignore"></a>
+        <h3>gitignore</h3>
+        <p>A gitignore file will determine which files and directories to ignore when making a commit.</p>
+        <pre>
+            <code class="language-python">
+        from passwords import GOOGLE_API_KEY
+        def google(str):
+            service = build("customsearch", "v1", developerKey=GOOGLE_API_KEY)
+            res = service.cse().list(q=str, cx='016654653224191036952:bj0zhyarxza',).execute()
+            return res['items'][0]['link']
+            </code>
+        </pre>
+        <p>Notice <pre>from passwords import GOOGLE_API_KEY</pre>s dsdsdsd</p>
     </div>
 </body>
 
