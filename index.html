@@ -50,16 +50,13 @@
         <a name="ignore"></a>
         <h3>gitignore</h3>
         <p>A gitignore file will determine which files and directories to ignore when making a commit.</p>
-        <pre>
-            <code class="language-python">
-        from passwords import GOOGLE_API_KEY
-        def google(str):
-            service = build("customsearch", "v1", developerKey=GOOGLE_API_KEY)
-            res = service.cse().list(q=str, cx='016654653224191036952:bj0zhyarxza',).execute()
-            return res['items'][0]['link']
-            </code>
-        </pre>
-        <p>Notice <pre>from passwords import GOOGLE_API_KEY</pre>s dsdsdsd</p>
+        <pre><code class="language-python">from passwords import GOOGLE_API_KEY
+def google(str):
+    service = build("customsearch", "v1", developerKey=GOOGLE_API_KEY)
+    res = service.cse().list(q=str, cx='016654653224191036952:bj0zhyarxza',).execute()
+    return res['items'][0]['link']</code></pre>
+        <p>Notice how I import the variable "GOOGLE_API_KEY" from a file called "passwords.py" I have this file included in gitignore so it cannot be committed and pushed to the repository for everyone to see.</p>
+        <p>Another example if you are familiar with Python are the "__pycache__" folders that are created when you import a non-standard module. The files within these folders serve no purpose in the repository and can be ignored.</p>
     </div>
 </body>
 
