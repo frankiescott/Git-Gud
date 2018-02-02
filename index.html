@@ -1,63 +1,59 @@
 <html>
 
 <head>
-    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="/prism.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-    <div id="sidebar">
-        <a href="#create">Creating An Account</a>
-        <a href="#install">Installing Git</a>
-        <a href="#configure">Configuring Git</a>
-        <a href="#first">Your First Repository</a>
-        <a href="#basic">Basic Commands</a>
+    <div class="container">
+        <h1 class="title">git gud</h1>
+        <hr>
+        <p>This tutorial will outline the necessary steps needed in order to contribute to the club project. It will be assumed that you already have registered for a GitHub account and have Git installed on your machine. If you need any help with this, contact John or Frankie.</p>
+
+        <h1>getting started</h1>
+        <hr>
+        <p>You will not be able to make changes to the repository master branch directly. We will be using a feature on GitHub called forking. When you fork a repository, a copy is made to your account. Navigate to the <a href="https://github.com/Stillmoon/sunycompwebsite">project repository.</a> You will see a button in the top right corner of the repository page to fork.</p>
+        <hr>
+        <div align="center"><img src="fork.png"></div>
+        <hr>
+        <p>Congratulations! You now have your own copy of the project repository.</p>
+
+        <h1>git clone</h1>
+        <hr>
+        <p>GitHub is only a remote hosting service for git repositories. While it is entirely possible to develop within GitHub itself, you will most likely want to use your favorite text editor or IDE for development.</p>
+
+        <p>Navigate to your forked copy of the repository by going to your profile and clicking on the repositories tab. </p>
+        <hr>
+        <div align="center"><img src="clone.png"></div>
+        <hr>
+        <p>Once you are on the repository page, click the green "Clone or download" button and copy the URL provided.</p>
+        <hr>
+        <div align="center"><img src="clone2.png"></div>
+        <hr>
+
+        <p>Open up the command line interface and navigate to the directory you would like to store the repository in. Once you have done so, issue the following command:</p>
+        <pre><code class="language-bash">git clone INSERT_URL</code></pre>
+        <p>This will clone the remote repository from GitHub and create a local copy on your machine.</p>
+
+        <h1>git add</h1>
+        <hr>
+        <p>The add command is used to stage files for a commit. Any time you add, delete, or modify a file, the adjustment must be added to the index before a commit can be made. There are three different commands that can be used:</p>
+        <pre><code class="language-bash">git add filename
+git add -A
+git add .
+git add -u</code></pre>
+        <p><code class="language-bash">git add filename</code> stages individual files one at a time. <code class="language-bash">git add -A</code> stages all files in the working directory. <code class="language-bash">git add .</code> stages new and modified files, but not deleted files. <code class="language-bash">git add -u</code> stages modified and deleted files, but not new files.</p>
+        <h1>git commit</h1>
+        <p>The commit command takes all of the staged files that you added and records their changes into your repository.</p>
     </div>
-
-    <div id="main">
-        <h1>Git & GitHub Basics</h1>
-        <h2>Frankie Scott</h2>
-        <p>This tutorial will outline the basics of Git and GitHub. Please keep in mind the functionality of Git extends beyond the scope of this tutorial. This should only be used as a stepping stone. If you have any questions, do not hesitate to contact me.</p>
-
-        <a name="create"></a>
-        <h3>Creating A GitHub Account</h3>
-        <p>Head over to the <a href="https://github.com/join?source=header-home">sign up page</a> to create a GitHub account. Create a username, password, and enter your e-mail. Choose the option for unlimited free public repositories as your plan. A paid subscription is not required. You will then be asked to provide some information about your programming experience and what you plan to use GitHub for. You can skip this step or fill out the form. Congratulations! You now have a GitHub account.</p>
-
-        <a name="install"></a>
-        <h3>Installing Git</h3>
-        <p>GitHub is a only a web-based hosting service for Git repositories. It allows you to store remote copies of your repositories as backups and enables you to share and view repositories. Git is the version control system that GitHub was built on top of. GitHub offers the same functionality but Git can be integrated into a text editor or IDE as a plugin and offer more effeciency in work flow.</p>
-
-        <p>Download Git <a href="https://git-scm.com/downloads">here.</a></p>
-
-        <a name="configure"></a>
-        <h3>Configuring Git</h3>
-        <p>Tutorial content</p>
-
-        <a name="first"></a>
-        <h3>Your First Repository</h3>
-        <p>Tutorial content</p>
-
-        <a name="basic"></a>
-        <h3>Basic Commands</h3>
-        <p>Tutorial content</p>
-
-        <a name="ignore"></a>
-        <h3>gitignore</h3>
-        <p>A gitignore file will determine which files and directories to ignore when making a commit.</p>
-        <pre><code class="language-python">from passwords import GOOGLE_API_KEY
-def google(str):
-    service = build("customsearch", "v1", developerKey=GOOGLE_API_KEY)
-    res = service.cse().list(q=str, cx='016654653224191036952:bj0zhyarxza',).execute()
-    return res['items'][0]['link']</code></pre>
-        <p>Notice how I import the variable "GOOGLE_API_KEY" from a file called "passwords.py" I have this file included in gitignore so it cannot be committed and pushed to the repository for everyone to see.</p>
-        <p>Another example if you are familiar with Python are the "__pycache__" folders that are created when you import a non-standard module. The files within these folders serve no purpose in the repository and can be ignored.</p>
-    </div>
+    <script src="prism.js"></script>
 </body>
 
 </html>

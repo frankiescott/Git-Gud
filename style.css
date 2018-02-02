@@ -1,37 +1,24 @@
-#sidebar {
-    width: 250px;
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 30px;
+
+h1 {
+    font-family: 'Ubuntu Mono', monospace;
 }
 
-#sidebar a {
+.title {
+    font-size: 84px;
+}
+
+img {
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 10px;
-    display: block;
 }
-
-#main {
-    padding-top: 30px;
-    margin-left: 250px;
-    margin-left: 250px;
-}
-
 body {
-    font-family: 'Monsterrat', sans-serif;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px
 }
-
-p {
-    font-size: 24px;
-}
-
 /* PrismJS 1.10.0
-http://prismjs.com/download.html?themes=prism&languages=python */
+http://prismjs.com/download.html?themes=prism&languages=bash */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
