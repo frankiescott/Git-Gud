@@ -2,7 +2,9 @@
 h1 {
     font-family: 'Ubuntu Mono', monospace;
 }
-
+.txt {
+    font-family: 'Ubuntu Mono', monospace;
+}
 .title {
     font-size: 84px;
 }
