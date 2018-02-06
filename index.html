@@ -63,20 +63,6 @@ git add -u</code></pre>
         <hr>
         <p>The push command will update the remote repository on GitHub with any new commits made in the local repository. This push command is issued by:</p>
         <pre><code class="language-bash">git push</code></pre>
-
-        <h1>syncing a fork</h1>
-        <hr>
-        <p>If the main repository is updated after you fork it, the changes will not automatically sync to your fork. It is important that you frequently update your fork so you are not working with an older version of the project. It is recommended that you sync your fork before you begin any sort of development.</p>
-        <p>Open up the command line interface and navigate to the repository directory. Issue the following commands:</p>
-        <pre><code class="language-bash">git fetch upstream</code></pre>
-        <p>This will fetch the commits from the main repository and store them in a local branch "upstream/master"</p>
-        <pre><code class="language-bash">git checkout master</code></pre>
-        <p>This will switch your current working branch to your fork's master branch.</p>
-        <pre><code class="language-bash">git merge upstream/master</code></pre>
-        <p>This will merge the changes from "upstream/master" into your fork's master branch.</p>
-        <p>You will have to provide a commit message for the merge. Keep in mind that this process will only update your local repository. Don't forget to push the changes to GitHub!</p>
-        <p></p>
-        <hr>
         <div class="container" align="center">
             <span align="center"><h1>workflow</h1></span>
             <div class="row">
@@ -95,6 +81,19 @@ git add -u</code></pre>
                 </div>
             </div>
         </div>
+        <hr>
+        <h1>syncing a fork</h1>
+        <hr>
+        <p>If the main repository is updated after you fork it, the changes will not automatically sync to your fork. It is important that you frequently update your fork so you are not working with an older version of the project. It is recommended that you sync your fork before you begin any sort of development.</p>
+        <p>Open up the command line interface and navigate to the repository directory. Issue the following commands:</p>
+        <pre><code class="language-bash">git fetch upstream</code></pre>
+        <p>This will fetch the commits from the main repository and store them in a local branch "upstream/master"</p>
+        <pre><code class="language-bash">git checkout master</code></pre>
+        <p>This will switch your current working branch to your fork's master branch.</p>
+        <pre><code class="language-bash">git merge upstream/master</code></pre>
+        <p>This will merge the changes from "upstream/master" into your fork's master branch.</p>
+        <p>You will have to provide a commit message for the merge. Keep in mind that this process will only update your local repository. Don't forget to push the changes to GitHub!</p>
+        <p></p>
         <hr>
         <p>Please keep in mind that the material outlined here is introductory level. Git and GitHub have far more functionality that is beyond the scope of this tutorial. It is always important to read and reference the <a href="https://git-scm.com/documentation">documention.</a></p>
         <hr>
