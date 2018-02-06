@@ -1,6 +1,7 @@
 
 h1 {
     font-family: 'Ubuntu Mono', monospace;
+    padding-top: 20px;
 }
 .txt {
     font-family: 'Ubuntu Mono', monospace;
@@ -8,7 +9,11 @@ h1 {
 .title {
     font-size: 84px;
 }
-
+.workflow {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: rgba(1, 1, 1, .1);
+}
 .fa-5x {
     padding-bottom: 5px;
 }
